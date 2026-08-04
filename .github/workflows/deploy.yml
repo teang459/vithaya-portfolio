@@ -29,7 +29,10 @@ jobs:
         with:
           node-version: 20
           cache: npm
-      - run: npm ci
+      # npm install (not ci): the lockfile is generated on Windows, but some
+      # deps resolve platform-specific optional packages (@emnapi/*) differently
+      # on the Linux runner, which trips npm ci's strict sync check.
+      - run: npm install
       - run: npm run build
       # Serve the underscore-prefixed _next folder as-is (skip Jekyll).
       - run: touch out/.nojekyll
