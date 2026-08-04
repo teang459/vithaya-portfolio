@@ -1,6 +1,9 @@
 import { ImageResponse } from "next/og";
 import { siteConfig } from "./seo.config";
 
+// Required for `output: export` — render the OG PNG once at build time.
+export const dynamic = "force-static";
+
 export const alt = siteConfig.title;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";

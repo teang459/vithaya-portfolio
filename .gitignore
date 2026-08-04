@@ -41,3 +41,8 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# local source material / exports not part of the site
+/Portfolio 2026/
+/*.pdf
+/teang.png

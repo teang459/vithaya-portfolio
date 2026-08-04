@@ -7,6 +7,7 @@ import Education from "@/components/Education";
 import Projects from "@/components/Projects";
 import Certifications from "@/components/Certifications";
 import Languages from "@/components/Languages";
+import References from "@/components/References";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <AIProductivity />
       <Certifications />
       <Languages />
+      <References />
       <Contact />
     </>
   );

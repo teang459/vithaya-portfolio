@@ -24,11 +24,14 @@ const ROLES = [
     org: "Souphattra Hotel · Vientiane, Laos",
     period: "April 2025 – Present",
     summary:
-      "Driving integrated marketing communication strategies that grow direct bookings.",
+      "Driving integrated marketing communication strategies that strengthen brand awareness and grow direct bookings.",
     points: [
-      "Produce Facebook content and run Mailchimp email marketing campaigns",
-      "Maintain the hotel WordPress website and manage OTA listings across Booking.com, Agoda, and Expedia",
-      "Leverage AI tools to accelerate content and campaign production, paired with human review",
+      "Develop and execute integrated MarCom strategies grounded in market and competitor research",
+      "Plan, create, and manage Facebook content aligned to brand identity and campaign goals",
+      "Design and run Mailchimp email campaigns with audience segmentation and performance analytics",
+      "Maintain the WordPress website with SEO-optimised pages and seasonal promotional landing pages",
+      "Optimise OTA listings, photography, and descriptions across Booking.com, Agoda, and Expedia",
+      "Prepare monthly marketing reports and use AI tools (ChatGPT, Claude, Gemini, Canva AI) with human review",
     ],
   },
   {
@@ -38,8 +41,11 @@ const ROLES = [
     summary:
       "Owned customer support and operational quality for a ride-hailing platform.",
     points: [
-      "Handled customer support, monitored app performance, and assisted drivers",
-      "Translated documents and app content from English and Russian into Lao using AI translation with human review",
+      "Resolved customer inquiries across phone, chat, and email, handling complex complaints with care",
+      "Worked in CRM software to update client records, track inquiries, and streamline support",
+      "Monitored app performance and supported drivers directly with troubleshooting",
+      "Translated app content and documents from English and Russian into Lao (AI-assisted, human-reviewed)",
+      "Prepared regular reports and represented the company at promotional events",
     ],
   },
   {
@@ -49,8 +55,10 @@ const ROLES = [
     summary:
       "Supported diplomatic communications and economic reporting.",
     points: [
-      "Drafted diplomatic notes, weekly summaries, and economic news reports",
-      "Handled international trade correspondence with precision and discretion",
+      "Handled official correspondence and worked with diplomatic documents and notes",
+      "Translated news into Lao and wrote weekly summaries and reports on the Lao economy",
+      "Researched international trade and drafted official correspondence",
+      "Participated in the work and events of the embassy",
     ],
   },
 ] as const;

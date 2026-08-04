@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
-import { Megaphone, Palette, Users } from "lucide-react";
+import { Sparkles, Megaphone, Palette, Users } from "lucide-react";
 
 const container: Variants = {
   hidden: {},
@@ -21,6 +21,17 @@ const item: Variants = {
 
 const GROUPS = [
   {
+    title: "AI & Productivity",
+    icon: Sparkles,
+    skills: [
+      "Prompt Engineering",
+      "AI Marketing & Business Research",
+      "AI-Assisted Content Creation",
+      "Data Analysis with AI",
+      "Digital Problem-Solving",
+    ],
+  },
+  {
     title: "Marketing & Web",
     icon: Megaphone,
     skills: [
@@ -31,6 +42,7 @@ const GROUPS = [
       "Social Media",
       "CRM",
       "Email Marketing",
+      "Web Development",
     ],
   },
   {
@@ -39,9 +51,16 @@ const GROUPS = [
     skills: ["Canva", "Photoshop", "MS Office", "Google Workspace"],
   },
   {
-    title: "Leadership",
+    title: "Soft Skills",
     icon: Users,
-    skills: ["Vice President, Lao Student Association in Moscow (2022–2024)"],
+    skills: [
+      "Leadership",
+      "Communication",
+      "Problem Solving",
+      "Teamwork",
+      "Analytical Thinking",
+      "Project Coordination",
+    ],
   },
 ] as const;
 

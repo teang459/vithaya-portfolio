@@ -25,21 +25,25 @@ const PROJECTS = [
     stack: ["JavaScript", "TypeScript", "PostgreSQL"],
     summary:
       "Inventory and stock management with database-backed CRUD operations.",
+    url: "https://claude-stock-two.vercel.app/",
   },
   {
     title: "Spend-Wise (v2)",
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
     summary: "Modern React rebuild of the expense tracker.",
+    url: "https://spend-wise-phi-tawny.vercel.app/",
   },
   {
     title: "Spendwise Expense Tracker",
     stack: ["Vanilla JS", "HTML5", "CSS3", "LocalStorage"],
     summary: "Full CRUD personal-finance app.",
+    url: "https://teang459.github.io/SSpendwise/",
   },
   {
     title: "Souphattra Signage Studio",
     stack: ["HTML5", "CSS3", "JavaScript"],
     summary: "Event direction signage tool for Souphattra Hotel.",
+    url: "https://teang459.github.io/souphattra-signage-studio/",
   },
 ] as const;
 
@@ -47,11 +51,15 @@ const PAPERS = [
   {
     title: "Beerlao: Tourism & Beer Exports in Laos",
     status: "Published",
+    summary:
+      "How tourism drives Beerlao's exports — correlating tourist inflows with export growth and recommending strategies to strengthen the brand in international markets.",
   },
   {
     title:
       "Environmental Impact & Marketing Communication in the USA Cannabis Market",
     status: "Research",
+    summary:
+      "Analysing the environmental footprint and marketing communication patterns of the US cannabis market, balancing eco-responsibility with effective outreach.",
   },
 ] as const;
 
@@ -93,8 +101,11 @@ export default function Projects() {
 
         <div className="mt-7 grid grid-cols-1 gap-6 sm:grid-cols-2">
           {PROJECTS.map((project) => (
-            <motion.article
+            <motion.a
               key={project.title}
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
               variants={item}
               className="group relative flex flex-col overflow-hidden rounded-3xl border border-border bg-foreground/[0.02] p-8 transition-colors hover:border-brand-red/30"
             >
@@ -126,7 +137,7 @@ export default function Projects() {
                   </li>
                 ))}
               </ul>
-            </motion.article>
+            </motion.a>
           ))}
         </div>
 
@@ -157,6 +168,9 @@ export default function Projects() {
               <h4 className="mt-6 text-lg font-semibold leading-snug tracking-tight text-foreground">
                 {paper.title}
               </h4>
+              <p className="mt-3 text-sm leading-relaxed text-muted">
+                {paper.summary}
+              </p>
             </motion.article>
           ))}
         </div>

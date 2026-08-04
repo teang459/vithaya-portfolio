@@ -14,16 +14,6 @@
   --accent: #dc2626; /* brand-red — single accent */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #111827; /* brand-dark */
-    --foreground: #f9fafb; /* brand-light */
-    --muted: #9ca3af;
-    --border: #1f2937;
-    --accent: #ef4444; /* slightly lifted red for dark surfaces */
-  }
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -38,6 +28,7 @@
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    color-scheme: light;
   }
 
   body {
